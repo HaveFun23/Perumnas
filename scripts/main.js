@@ -34,8 +34,16 @@ for (let s of target_que) {
   });
 }
 
-/* target_que.addEventListener("click", function (e) {
-  var don = target_que.closest(".question_sample");
-  don.style.backgroundColor = "red";
-  console.log(don);
-}); */
+var but_menu = document.querySelector(".but_menu");
+var modal_win = document.querySelector(".modal_win");
+var body = document.querySelector("body");
+var cross = document.querySelector(".cross");
+
+but_menu.addEventListener("click", function () {
+  modal_win.className = "modal_win active";
+  body.style.overflow = "hidden";
+});
+cross.addEventListener("click", function () {
+  modal_win.className = "modal_win";
+  body.style.overflow = "unset";
+});
