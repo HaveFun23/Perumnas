@@ -1,4 +1,4 @@
-var slider_line = document.querySelector(".slider_line");
+/* var slider_line = document.querySelector(".slider_line");
 var target_slider_arrows = document.querySelectorAll(".arrow");
 var offset = 0;
 for (let a of target_slider_arrows) {
@@ -62,4 +62,4 @@ function change() {
   if (x > 1600) {
     img_for_adapt.src = "./img/background/Hero Section.png";
   }
-}
+} */

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -153,7 +158,7 @@
         </div>
       </div>
       <div class="container slider">
-        <div class="arrows_for_slider">
+        <!-- <div class="arrows_for_slider">
           <div class="arrow">
             <svg
               data-dir="left"
@@ -211,11 +216,81 @@
               </g>
             </svg>
           </div>
+        </div> -->
+        <div></div>
+        <div class="arrows_container">
+          <button>
+            <svg
+              width="64px"
+              height="64px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15 7L10 12L15 17"
+                  stroke="#000000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <button>
+            <svg
+              width="64px"
+              height="64px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              transform="matrix(-1, 0, 0, 1, 0, 0)"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15 7L10 12L15 17"
+                  stroke="#000000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
         </div>
-        <div class="slider_line">
-          <div><img src="./img/photos/slider/1.png" alt="img" /></div>
-          <div><img src="./img/photos/slider/2.png" alt="img" /></div>
-          <div><img src="./img/photos/slider/3.png" alt="img" /></div>
+        <div class="my-slider">
+          <div>
+            <div class="item-slider">
+              <img src="./img/photos/slider/1.png" alt="img" />
+            </div>
+          </div>
+          <div>
+            <div class="item-slider">
+              <img src="./img/photos/slider/2.png" alt="img" />
+            </div>
+          </div>
+          <div>
+            <div class="item-slider">
+              <img src="./img/photos/slider/3.png" alt="img" />
+            </div>
+          </div>
         </div>
       </div>
       <section class="container features">
@@ -562,6 +637,23 @@
         </nav>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      var slider = tns({
+        container: ".my-slider",
+        items: 2,
+        slideBy: "page",
+        arrowKeys: true,
+        autoplay: false,
+        mouseDrag: true,
+        swipeAngle: false,
+        speed: 400,
+        nav: false,
+        controlsContainer: ".arrows_container",
+        autoWidth: true,
+        gutter: 100,
+      });
+    </script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

@@ -495,16 +495,50 @@ nav button:hover {
 
 /* slider */
 .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-  padding: 40px 0px;
-  overflow-x: hidden;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.arrows_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+.arrows_container button {
+  background-color: rgba(97, 101, 110, 0.4705882353);
+  border-radius: 20%;
+}
+
+.item-slider {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tns-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slider_line {
