@@ -532,6 +532,21 @@ nav button:hover {
   margin: 0 auto;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .item-slider {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .arrows_container {
+    width: 90%;
+  }
+}
 .tns-controls {
   display: -webkit-box;
   display: -ms-flexbox;

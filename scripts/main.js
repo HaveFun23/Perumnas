@@ -63,3 +63,27 @@ function change() {
     img_for_adapt.src = "./img/background/Hero Section.png";
   }
 } */
+  var slider = tns({
+    container: ".my-slider",
+    items: 2,
+    slideBy: "page",
+    arrowKeys: true,
+    autoplay: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    nav: false,
+    controlsContainer: ".arrows_container",
+    autoWidth: true,
+    
+    responsive:{
+      300:{
+      gutter: 50
+      },
+      900:{
+      gutter: 100
+      }
+      
+    }
+  });
+
