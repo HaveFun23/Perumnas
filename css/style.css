@@ -625,6 +625,10 @@ nav button:hover {
   rotate: 45deg;
 }
 
+.cross_cont {
+  cursor: pointer;
+}
+
 .modal_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,3 +896,25 @@ nav button:hover {
     margin-top: 60px;
   }
 }
+/* 404 page  */
+.warning_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+}
+
+.warning_text {
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* end 404 page */
