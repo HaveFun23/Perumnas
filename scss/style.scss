@@ -12,6 +12,9 @@
 }
 header {
   position: relative;
+  background-image: url("../img/background/Hero\ Section.png");
+  background-size: cover;
+  padding-bottom: 48vw;
   nav {
     a:hover:after {
       content: "";
@@ -47,7 +50,7 @@ header {
   border: 3px solid white;
   filter: blur(2px);
 }
-.back::before {
+header::before {
   content: "";
   position: absolute;
   height: clamp(100px, 10vw, 200px);
@@ -116,7 +119,6 @@ nav {
 }
 
 .awards {
-  margin-top: 45vw;
   display: flex;
   justify-content: space-between;
   padding: 120px 80px 80px 80px;
@@ -446,21 +448,7 @@ nav {
 .but_que {
   min-width: 18px;
 }
-@media (max-width: 1500px) {
-  .awards {
-    margin-top: 35vw;
-  }
-}
-@media (max-width: 1500px) {
-  .awards {
-    margin-top: 35vw;
-  }
-}
-@media (max-width: 1100px) {
-  .awards {
-    margin-top: 25vw;
-  }
-}
+
 @media (max-width: 1060px) {
   .prescr_for_que {
     h4 {

@@ -53,3 +53,22 @@ function change() {
     }
   });
 
+  var target_que = document.querySelectorAll(".pustiska");
+
+  for (let s of target_que) {
+    s.addEventListener("click", function (e) {
+      var don = e.target.closest(".question_sample");
+      var answer = don.querySelector(".answer");
+      var plus = don.querySelector(".plus");
+      var minus = don.querySelector(".minus");
+      if (answer.style.display == "block") {
+        answer.style.display = "none";
+        minus.style.display = "none";
+        plus.style.display = "block";
+      } else {
+        answer.style.display = "block";
+        minus.style.display = "block";
+        plus.style.display = "none";
+      }
+    });
+  }
